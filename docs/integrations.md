@@ -9,7 +9,7 @@ Add these environment variables in Vercel:
 ```txt
 NEXT_PUBLIC_SITE_URL=https://reclarmarcenaria.com
 NEXT_PUBLIC_WHATSAPP_NUMBER=5511958943182
-QUOTE_TO_EMAIL=orcamentos@reclarmarcenaria.com
+QUOTE_TO_EMAIL=rodrigues.regio@yahoo.com.br
 ```
 
 Optional later:
@@ -22,7 +22,7 @@ STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
 STRIPE_PRICE_DEPOSIT=
 RESEND_API_KEY=
-EMAIL_FROM_DEFAULT="Reclar Marcenaria <contato@reclarmarcenaria.com>"
+EMAIL_FROM_DEFAULT="Reclar Marcenaria <rodrigues.regio@yahoo.com.br>"
 ```
 
 ## Supabase

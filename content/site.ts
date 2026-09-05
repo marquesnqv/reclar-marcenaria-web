@@ -7,7 +7,7 @@ export const siteConfig = {
   hours: "Aberto das 8h às 17h",
   phone: "11 95894-3182",
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5511958943182",
-  email: "orcamentos@reclarmarcenaria.com",
+  email: "rodrigues.regio@yahoo.com.br",
   nav: [
     { label: "Início", href: "/" },
     { label: "Projetos", href: "/projetos" },
