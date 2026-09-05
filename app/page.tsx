@@ -21,8 +21,8 @@ export default function Home() {
           <p className="section-kicker">Marcenaria sob medida</p>
           <h1>Móveis pensados para o seu espaço.</h1>
           <p>
-            A Reclar Marcenaria desenvolve projetos em madeira para casas e empresas,
-            com foco em acabamento, durabilidade e uso diário.
+            A Reclar Marcenaria cria móveis sob medida para casas e empresas, unindo
+            desenho inteligente, acabamento preciso e durabilidade para o uso diário.
           </p>
           <div className="hero-actions">
             <Link className="primary-button" href={buildWhatsappUrl(defaultQuoteMessage)} target="_blank">
@@ -47,8 +47,8 @@ export default function Home() {
         <div>
           <p className="section-kicker">Serviços</p>
           <p className="section-intro">
-            Do primeiro contato até a instalação, a proposta é transformar uma
-            necessidade real em um móvel bem resolvido.
+            Do primeiro contato à instalação, transformamos necessidades reais em
+            ambientes funcionais, acolhedores e bem resolvidos.
           </p>
         </div>
         <div className="card-grid">
@@ -81,8 +81,8 @@ export default function Home() {
           <div>
             <p className="section-kicker">Projetos</p>
             <p className="section-intro">
-              Espaços para publicar fotos reais, antes e depois, materiais e
-              trabalhos recentes.
+              Veja detalhes de projetos residenciais e comerciais executados pela
+              nossa equipe, com soluções pensadas para cada ambiente.
             </p>
           </div>
           <div className="card-grid">

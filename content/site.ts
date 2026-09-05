@@ -20,15 +20,15 @@ export const siteConfig = {
 export const services = [
   {
     title: "Móveis planejados",
-    text: "Projetos sob medida para cozinhas, quartos, salas, escritórios e áreas de serviço.",
+    text: "Móveis sob medida para cozinhas, quartos, salas, escritórios e áreas de serviço.",
   },
   {
     title: "Ambientes comerciais",
-    text: "Balcões, painéis, armários, recepções e estruturas pensadas para uso diário.",
+    text: "Balcões, painéis, armários, recepções e estruturas desenhadas para a rotina do seu negócio.",
   },
   {
     title: "Reformas e ajustes",
-    text: "Ajustes, renovação de peças e melhorias em móveis existentes quando o projeto permite.",
+    text: "Ajustes, renovação de peças e melhorias em móveis existentes, sempre que o projeto permitir.",
   },
 ];
 

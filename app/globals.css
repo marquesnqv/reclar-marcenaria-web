@@ -8,8 +8,8 @@
   --wood-dark: #422516;
   --green: #2f5b45;
   --charcoal: #141312;
-  --font-sans: "Avenir Next", "Segoe UI", sans-serif;
-  --font-display: Georgia, serif;
+  --font-sans: "Segoe UI", Arial, sans-serif;
+  --font-display: "Segoe UI", Arial, sans-serif;
 }
 
 * {
@@ -174,7 +174,8 @@ button {
   font-family: var(--font-display), serif;
   font-size: clamp(2.75rem, 6.4vw, 6rem);
   font-weight: 700;
-  line-height: 0.9;
+  line-height: 0.98;
+  letter-spacing: -0.045em;
 }
 
 .hero p,
@@ -557,9 +558,10 @@ button {
 }
 
 .lightbox-caption h2 {
-  font-family: var(--font-display), serif;
+  font-family: var(--font-display), sans-serif;
   font-size: clamp(1.8rem, 3vw, 2.8rem);
-  line-height: 0.95;
+  line-height: 1;
+  letter-spacing: -0.035em;
 }
 
 .lightbox-caption p,
