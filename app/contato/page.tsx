@@ -38,6 +38,7 @@ export default function ContatoPage() {
               <MapPin size={22} /> Endereço
             </h3>
             <p>{siteConfig.address}</p>
+            <p>{siteConfig.serviceArea}</p>
             <p>{siteConfig.hours}</p>
           </article>
         </div>

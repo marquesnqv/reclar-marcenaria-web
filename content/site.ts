@@ -4,6 +4,7 @@ export const siteConfig = {
   description:
     "Marcenaria sob medida em São Bernardo do Campo para móveis planejados, ambientes residenciais e projetos comerciais.",
   address: "Alameda Minas Gerais, 929, Parque São Bernardo, São Bernardo do Campo, São Paulo",
+  serviceArea: "Atendemos no ABC e região.",
   hours: "Aberto das 8h às 17h",
   phone: "11 95894-3182",
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5511958943182",

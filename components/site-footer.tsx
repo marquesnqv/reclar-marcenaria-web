@@ -19,6 +19,7 @@ export default function SiteFooter() {
         <div>
           <strong>Endereço</strong>
           <p>{siteConfig.address}</p>
+          <p>{siteConfig.serviceArea}</p>
           <p>{siteConfig.hours}</p>
         </div>
         <div className="footer-actions">

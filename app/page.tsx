@@ -91,6 +91,7 @@ export default function Home() {
         <div>
           <p className="section-kicker">Contato</p>
           <p className="section-intro">{siteConfig.address}</p>
+          <p className="section-intro">{siteConfig.serviceArea}</p>
         </div>
         <div className="contact-card">
           <h3>
