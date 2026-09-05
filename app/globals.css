@@ -39,6 +39,10 @@ textarea {
   font: inherit;
 }
 
+button {
+  color: inherit;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -408,16 +412,155 @@ textarea {
 
 .project-card-image {
   object-fit: cover;
+  transition: transform 700ms ease;
 }
 
 .project-card-copy {
   position: relative;
   z-index: 1;
+  text-align: left;
 }
 
 .project-card p,
 .project-card .meta {
   color: rgba(255, 250, 240, 0.76);
+}
+
+.project-card-button {
+  width: 100%;
+  border: 1px solid var(--line);
+  cursor: pointer;
+  text-align: left;
+}
+
+.project-card-button:hover .project-card-image {
+  transform: scale(1.05);
+}
+
+.project-card-button:focus-visible {
+  outline: 3px solid var(--wood);
+  outline-offset: 4px;
+}
+
+.project-card-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  color: var(--paper-strong);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.gallery-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+}
+
+.lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgba(20, 19, 18, 0.86);
+  cursor: pointer;
+}
+
+.lightbox-panel {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, 100%);
+  max-height: calc(100svh - 44px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.34fr);
+  overflow: hidden;
+  border: 1px solid rgba(255, 250, 240, 0.18);
+  background: var(--charcoal);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
+}
+
+.lightbox-image-wrap {
+  position: relative;
+  min-height: min(76svh, 720px);
+  background: #090807;
+}
+
+.lightbox-image {
+  object-fit: contain;
+}
+
+.lightbox-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 12px;
+  padding: 28px;
+  color: var(--paper-strong);
+}
+
+.lightbox-caption h2,
+.lightbox-caption p {
+  margin: 0;
+}
+
+.lightbox-caption h2 {
+  font-family: var(--font-display), serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  line-height: 0.95;
+}
+
+.lightbox-caption p,
+.lightbox-caption small {
+  color: rgba(255, 250, 240, 0.72);
+  line-height: 1.5;
+}
+
+.lightbox-close,
+.lightbox-nav {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 250, 240, 0.24);
+  background: rgba(20, 19, 18, 0.74);
+  color: var(--paper-strong);
+  cursor: pointer;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.lightbox-close:hover,
+.lightbox-nav:hover {
+  transform: translateY(-1px);
+  background: rgba(66, 37, 22, 0.9);
+}
+
+.lightbox-close {
+  top: 18px;
+  right: 18px;
+}
+
+.lightbox-nav {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox-nav:hover {
+  transform: translateY(calc(-50% - 1px));
+}
+
+.lightbox-nav.previous {
+  left: 18px;
+}
+
+.lightbox-nav.next {
+  right: calc(min(1120px, 100vw - 44px) * 0.34 + 18px);
 }
 
 .meta {
@@ -548,6 +691,36 @@ textarea {
 
   .project-card {
     min-height: 220px;
+  }
+
+  .gallery-lightbox {
+    padding: 12px;
+  }
+
+  .lightbox-panel {
+    max-height: calc(100svh - 24px);
+    grid-template-columns: 1fr;
+  }
+
+  .lightbox-image-wrap {
+    min-height: 58svh;
+  }
+
+  .lightbox-caption {
+    padding: 18px;
+  }
+
+  .lightbox-close {
+    top: 12px;
+    right: 12px;
+  }
+
+  .lightbox-nav.previous {
+    left: 12px;
+  }
+
+  .lightbox-nav.next {
+    right: 12px;
   }
 
   .quote-form {

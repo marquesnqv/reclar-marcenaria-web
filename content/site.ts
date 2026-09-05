@@ -63,6 +63,34 @@ export const projectCards = [
 
 export const portfolioProjects = [
   {
+    src: "/images/portfolio-cozinha-planejada-1.png",
+    alt: "Cozinha planejada compacta com armários superiores, bancada e nicho para micro-ondas.",
+    title: "Cozinha planejada compacta",
+    category: "Cozinhas",
+    text: "Armários superiores, bancada funcional e aproveitamento completo da parede para organizar o dia a dia.",
+  },
+  {
+    src: "/images/portfolio-sala-cozinha-integrada-1.png",
+    alt: "Painel ripado com bancada e cozinha integrada ao fundo.",
+    title: "Sala e cozinha integradas",
+    category: "Residencial",
+    text: "Marcenaria clara com painel ripado, bancada e integração visual entre os ambientes.",
+  },
+  {
+    src: "/images/portfolio-dormitorio-planejado-1.png",
+    alt: "Dormitório com armários planejados, painel de madeira e gaveteiros laterais.",
+    title: "Dormitório planejado",
+    category: "Quartos",
+    text: "Armários altos, painel central e gaveteiros laterais para criar um quarto funcional e bem acabado.",
+  },
+  {
+    src: "/images/portfolio-cozinha-cinza-1.png",
+    alt: "Cozinha com armários cinza, bancada em madeira e puxadores pretos.",
+    title: "Cozinha com acabamento cinza",
+    category: "Cozinhas",
+    text: "Armários inferiores e superiores com bancada em madeira, puxadores pretos e layout prático.",
+  },
+  {
     src: "/images/portfolio-armario-iluminado-1.png",
     alt: "Armário sob medida com portas de vidro e iluminação interna.",
     title: "Armário com iluminação",
