@@ -158,7 +158,17 @@ button {
   justify-content: end;
   gap: 22px;
   padding: clamp(36px, 6vw, 72px) clamp(20px, 5vw, 56px);
-  border-right: 1px solid var(--line);
+  border-right: 1px solid rgba(255, 250, 240, 0.14);
+  background: var(--charcoal);
+  color: var(--paper-strong);
+}
+
+.hero-copy .section-kicker {
+  color: #d09a69;
+}
+
+.hero-copy p:not(.section-kicker) {
+  color: rgba(255, 250, 240, 0.72);
 }
 
 .section-kicker,
@@ -198,6 +208,11 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.hero-copy .secondary-button {
+  border-color: rgba(255, 250, 240, 0.42);
+  color: var(--paper-strong);
 }
 
 .hero-visual {
@@ -265,6 +280,30 @@ button {
 
 .content-band + .content-band {
   border-top: 1px solid var(--line);
+}
+
+.hero + .content-band {
+  background: var(--wood-dark);
+  color: var(--paper-strong);
+}
+
+.hero + .content-band .section-kicker {
+  color: #d09a69;
+}
+
+.hero + .content-band .section-intro,
+.hero + .content-band .process-list li {
+  color: rgba(255, 250, 240, 0.72);
+}
+
+.hero + .content-band .service-card {
+  border-color: rgba(255, 250, 240, 0.18);
+  background: rgba(255, 250, 240, 0.08);
+  box-shadow: none;
+}
+
+.hero + .content-band .service-card h3 {
+  color: var(--paper-strong);
 }
 
 .content-band:nth-of-type(even) {
@@ -410,7 +449,16 @@ button {
 .page-hero {
   padding: clamp(40px, 6vw, 72px) clamp(20px, 5vw, 56px) clamp(30px, 4vw, 48px);
   border-bottom: 1px solid var(--line);
-  background: rgba(255, 250, 240, 0.52);
+  background: var(--charcoal);
+  color: var(--paper-strong);
+}
+
+.page-hero .section-kicker {
+  color: #d09a69;
+}
+
+.page-hero-heading p {
+  color: rgba(255, 250, 240, 0.72);
 }
 
 .page-hero-heading {
