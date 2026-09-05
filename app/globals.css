@@ -215,7 +215,11 @@ textarea {
   position: absolute;
   inset: 0;
   opacity: 0;
-  animation: heroSlideshow 30s infinite;
+  transition: opacity 900ms ease;
+}
+
+.hero-slide.is-active {
+  opacity: 1;
 }
 
 .hero-slide-image {
@@ -227,18 +231,6 @@ textarea {
 
 .hero-visual:hover .hero-slide-image {
   transform: scale(1.06);
-}
-
-@keyframes heroSlideshow {
-  0%,
-  15% {
-    opacity: 1;
-  }
-
-  19%,
-  100% {
-    opacity: 0;
-  }
 }
 
 .visual-label {

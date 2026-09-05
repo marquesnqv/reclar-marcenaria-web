@@ -61,30 +61,48 @@ export const projectCards = [
   },
 ];
 
-export const heroImages = [
+export const portfolioProjects = [
   {
     src: "/images/portfolio-armario-iluminado-1.png",
     alt: "Armário sob medida com portas de vidro e iluminação interna.",
+    title: "Armário com iluminação",
+    category: "Residencial",
+    text: "Portas de vidro, iluminação interna e acabamento em madeira para valorizar o ambiente.",
   },
   {
     src: "/images/portfolio-armario-iluminado-2.png",
     alt: "Armário planejado em madeira com portas abertas e iluminação.",
+    title: "Armário planejado",
+    category: "Sob medida",
+    text: "Projeto em madeira com portas em vidro e nichos iluminados para organização do espaço.",
   },
   {
     src: "/images/portfolio-armario-espelho-1.png",
     alt: "Armário planejado com portas espelhadas em ambiente residencial.",
+    title: "Portas espelhadas",
+    category: "Quartos",
+    text: "Solução com portas espelhadas e laterais em madeira, pensada para ampliar visualmente o cômodo.",
   },
   {
     src: "/images/portfolio-armario-espelho-2.png",
     alt: "Detalhe de armário planejado com portas espelhadas e acabamento em madeira.",
+    title: "Acabamento em madeira",
+    category: "Residencial",
+    text: "Detalhe do encontro entre madeira, espelho e iluminação em um projeto sob medida.",
   },
   {
     src: "/images/portfolio-armario-espelho-3.png",
     alt: "Armário em L com portas espelhadas e laterais em madeira.",
+    title: "Armário em L",
+    category: "Sob medida",
+    text: "Aproveitamento de canto com portas espelhadas e estrutura em madeira para uso diário.",
   },
   {
     src: "/images/portfolio-armario-espelho-4.png",
     alt: "Vista lateral de armário planejado com porta espelhada.",
+    title: "Vista lateral do projeto",
+    category: "Instalação",
+    text: "Projeto executado com atenção ao encaixe, proporção e integração com o ambiente.",
   },
 ];
 

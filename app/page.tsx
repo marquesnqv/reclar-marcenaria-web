@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, MapPin, MessageCircle } from "lucide-react";
+import HeroCarousel from "@/components/hero-carousel";
 import QuotePanel from "@/components/quote-panel";
 import {
   buildWhatsappUrl,
   defaultQuoteMessage,
-  heroImages,
+  portfolioProjects,
   processSteps,
   projectCards,
   services,
@@ -35,18 +36,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-visual" aria-label="Galeria de projetos residenciais da Reclar">
-          {heroImages.map((image, index) => (
-            <div className="hero-slide" key={image.src} style={{ animationDelay: `${index * 5}s` }}>
-              <Image
-                src={image.src}
-                alt={image.alt}
-                fill
-                priority={index === 0}
-                sizes="(max-width: 900px) 100vw, 48vw"
-                className="hero-slide-image"
-              />
-            </div>
-          ))}
+          <HeroCarousel images={portfolioProjects} />
           <div className="visual-label">
             Projetos sob medida em São Bernardo do Campo, das 8h às 17h.
           </div>

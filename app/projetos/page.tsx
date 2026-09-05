@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { projectCards } from "@/content/site";
+import { portfolioProjects } from "@/content/site";
 
 export const metadata = {
   title: "Projetos",
@@ -18,17 +18,15 @@ export default function ProjetosPage() {
       </section>
 
       <section className="page-main project-grid">
-        {projectCards.map((project) => (
-          <article className="project-card" key={project.title}>
-            {project.image ? (
-              <Image
-                src={project.image}
-                alt={project.imageAlt}
-                fill
-                sizes="(max-width: 900px) 50vw, 50vw"
-                className="project-card-image"
-              />
-            ) : null}
+        {portfolioProjects.map((project) => (
+          <article className="project-card" key={project.src}>
+            <Image
+              src={project.src}
+              alt={project.alt}
+              fill
+              sizes="(max-width: 619px) 100vw, 50vw"
+              className="project-card-image"
+            />
             <div className="project-card-copy">
               <span className="meta">{project.category}</span>
               <h3>{project.title}</h3>
