@@ -1,0 +1,105 @@
+import Link from "next/link";
+import { ArrowUpRight, MapPin, MessageCircle } from "lucide-react";
+import QuotePanel from "@/components/quote-panel";
+import { buildWhatsappUrl, defaultQuoteMessage, processSteps, projectCards, services, siteConfig } from "@/content/site";
+
+export default function Home() {
+  return (
+    <main>
+      <section className="hero">
+        <div className="hero-copy">
+          <p className="section-kicker">Marcenaria sob medida</p>
+          <h1>Moveis pensados para o seu espaco.</h1>
+          <p>
+            A Reclar Marcenaria desenvolve projetos em madeira para casas e empresas,
+            com foco em acabamento, durabilidade e uso diario.
+          </p>
+          <div className="hero-actions">
+            <Link className="primary-button" href={buildWhatsappUrl(defaultQuoteMessage)} target="_blank">
+              <MessageCircle size={18} />
+              Solicitar orcamento
+            </Link>
+            <Link className="secondary-button" href="/projetos">
+              Ver projetos
+              <ArrowUpRight size={18} />
+            </Link>
+          </div>
+        </div>
+        <div className="hero-visual" aria-label="Textura visual de marcenaria">
+          <div className="visual-label">
+            Projetos sob medida em Sao Bernardo do Campo, das 8h as 17h.
+          </div>
+        </div>
+      </section>
+
+      <section className="content-band split-band">
+        <div>
+          <p className="section-kicker">Servicos</p>
+          <p className="section-intro">
+            Do primeiro contato ate a instalacao, a proposta e transformar uma
+            necessidade real em um movel bem resolvido.
+          </p>
+        </div>
+        <div className="card-grid">
+          {services.map((service) => (
+            <article className="service-card" key={service.title}>
+              <h3>{service.title}</h3>
+              <p>{service.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="content-band split-band">
+        <div>
+          <p className="section-kicker">Como funciona</p>
+          <p className="section-intro">
+            Um processo direto para entender medidas, acabamento e prioridade antes
+            de iniciar a producao.
+          </p>
+        </div>
+        <ol className="process-list">
+          {processSteps.map((step) => (
+            <li key={step}>{step}</li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="content-band">
+        <div className="split-band">
+          <div>
+            <p className="section-kicker">Projetos</p>
+            <p className="section-intro">
+              Espacos para publicar fotos reais, antes e depois, materiais e
+              trabalhos recentes.
+            </p>
+          </div>
+          <div className="card-grid">
+            {projectCards.slice(0, 3).map((project) => (
+              <article className="service-card" key={project.title}>
+                <h3>{project.title}</h3>
+                <p>{project.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <QuotePanel />
+
+      <section className="content-band split-band">
+        <div>
+          <p className="section-kicker">Contato</p>
+          <p className="section-intro">{siteConfig.address}</p>
+        </div>
+        <div className="contact-card">
+          <h3>
+            <MapPin size={22} /> Atendimento
+          </h3>
+          <p>{siteConfig.hours}</p>
+          <p>{siteConfig.phone}</p>
+        </div>
+      </section>
+    </main>
+  );
+}
