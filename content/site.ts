@@ -61,6 +61,33 @@ export const projectCards = [
   },
 ];
 
+export const heroImages = [
+  {
+    src: "/images/portfolio-armario-iluminado-1.png",
+    alt: "Armário sob medida com portas de vidro e iluminação interna.",
+  },
+  {
+    src: "/images/portfolio-armario-iluminado-2.png",
+    alt: "Armário planejado em madeira com portas abertas e iluminação.",
+  },
+  {
+    src: "/images/portfolio-armario-espelho-1.png",
+    alt: "Armário planejado com portas espelhadas em ambiente residencial.",
+  },
+  {
+    src: "/images/portfolio-armario-espelho-2.png",
+    alt: "Detalhe de armário planejado com portas espelhadas e acabamento em madeira.",
+  },
+  {
+    src: "/images/portfolio-armario-espelho-3.png",
+    alt: "Armário em L com portas espelhadas e laterais em madeira.",
+  },
+  {
+    src: "/images/portfolio-armario-espelho-4.png",
+    alt: "Vista lateral de armário planejado com porta espelhada.",
+  },
+];
+
 export const processSteps = [
   "Você envia medidas, fotos ou uma descrição do ambiente.",
   "A equipe entende o uso do espaço e prepara uma proposta inicial.",

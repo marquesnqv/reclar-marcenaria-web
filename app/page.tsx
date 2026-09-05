@@ -2,7 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, MapPin, MessageCircle } from "lucide-react";
 import QuotePanel from "@/components/quote-panel";
-import { buildWhatsappUrl, defaultQuoteMessage, processSteps, projectCards, services, siteConfig } from "@/content/site";
+import {
+  buildWhatsappUrl,
+  defaultQuoteMessage,
+  heroImages,
+  processSteps,
+  projectCards,
+  services,
+  siteConfig,
+} from "@/content/site";
 
 export default function Home() {
   return (
@@ -26,7 +34,19 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="hero-visual" aria-label="Textura visual de marcenaria">
+        <div className="hero-visual" aria-label="Galeria de projetos residenciais da Reclar">
+          {heroImages.map((image, index) => (
+            <div className="hero-slide" key={image.src} style={{ animationDelay: `${index * 5}s` }}>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                priority={index === 0}
+                sizes="(max-width: 900px) 100vw, 48vw"
+                className="hero-slide-image"
+              />
+            </div>
+          ))}
           <div className="visual-label">
             Projetos sob medida em São Bernardo do Campo, das 8h às 17h.
           </div>
