@@ -906,3 +906,64 @@ button {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* Retorno ao acabamento original, sem fundos texturizados ou blocos coloridos. */
+body {
+  background: var(--paper);
+}
+
+.hero,
+.page-hero {
+  background: var(--paper-strong);
+}
+
+.hero-copy {
+  border-right: 0;
+  background: transparent;
+  color: var(--ink);
+}
+
+.hero-copy .section-kicker,
+.page-hero .section-kicker {
+  color: var(--wood);
+}
+
+.hero-copy p:not(.section-kicker),
+.page-hero-heading p {
+  color: var(--muted);
+}
+
+.hero-copy .secondary-button {
+  border-color: var(--wood-dark);
+  color: var(--wood-dark);
+}
+
+.hero + .content-band {
+  background: transparent;
+  color: var(--ink);
+}
+
+.hero + .content-band .section-kicker {
+  color: var(--wood);
+}
+
+.hero + .content-band .section-intro,
+.hero + .content-band .process-list li {
+  color: var(--muted);
+}
+
+.hero + .content-band .service-card {
+  border-color: var(--line);
+  background: var(--paper-strong);
+  box-shadow: 8px 8px 0 rgba(66, 37, 22, 0.05);
+}
+
+.hero + .content-band .service-card h3 {
+  color: var(--ink);
+}
+
+:root {
+  --charcoal: #141312;
+  --font-sans: "Segoe UI", Arial, sans-serif;
+  --font-display: Georgia, serif;
+}
