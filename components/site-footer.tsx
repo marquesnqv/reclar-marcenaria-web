@@ -7,7 +7,7 @@ export default function SiteFooter() {
     <footer className="site-footer">
       <div>
         <p className="footer-kicker">Reclar Marcenaria LTDA</p>
-        <h2>Moveis sob medida com acabamento limpo e acompanhamento direto.</h2>
+        <h2>Móveis sob medida com acabamento limpo e acompanhamento direto.</h2>
       </div>
 
       <div className="footer-grid">
@@ -17,7 +17,7 @@ export default function SiteFooter() {
           <p>{siteConfig.email}</p>
         </div>
         <div>
-          <strong>Endereco</strong>
+          <strong>Endereço</strong>
           <p>{siteConfig.address}</p>
           <p>{siteConfig.hours}</p>
         </div>

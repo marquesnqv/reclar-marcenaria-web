@@ -15,7 +15,7 @@ export default function ContatoPage() {
         <p className="section-kicker">Contato</p>
         <h1>Fale com a Reclar.</h1>
         <p>
-          Atendimento em Sao Bernardo do Campo para projetos residenciais e comerciais.
+          Atendimento em São Bernardo do Campo para projetos residenciais e comerciais.
         </p>
       </section>
 
@@ -35,7 +35,7 @@ export default function ContatoPage() {
           </article>
           <article className="contact-card">
             <h3>
-              <MapPin size={22} /> Endereco
+              <MapPin size={22} /> Endereço
             </h3>
             <p>{siteConfig.address}</p>
             <p>{siteConfig.hours}</p>
@@ -43,7 +43,7 @@ export default function ContatoPage() {
         </div>
 
         <Link className="map-panel" href={mapUrl} target="_blank" rel="noreferrer">
-          Abrir endereco no Google Maps
+          Abrir endereço no Google Maps
         </Link>
       </section>
     </main>

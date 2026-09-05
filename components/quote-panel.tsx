@@ -6,11 +6,11 @@ export default function QuotePanel() {
   return (
     <section className="quote-panel" id="orcamento">
       <div>
-        <p className="section-kicker">Orcamento</p>
-        <h2>Conte o que voce precisa fazer em madeira.</h2>
+        <p className="section-kicker">Orçamento</p>
+        <h2>Conte o que você precisa fazer em madeira.</h2>
         <p>
-          Envie fotos, medidas e uma descricao do ambiente. A Reclar responde com o
-          proximo passo para avaliar material, acabamento, prazo e instalacao.
+          Envie fotos, medidas e uma descrição do ambiente. A Reclar responde com o
+          próximo passo para avaliar material, acabamento, prazo e instalação.
         </p>
       </div>
 
@@ -31,14 +31,14 @@ export default function QuotePanel() {
             </option>
             <option>Cozinha planejada</option>
             <option>Quarto ou closet</option>
-            <option>Escritorio</option>
+            <option>Escritório</option>
             <option>Projeto comercial</option>
             <option>Outro</option>
           </select>
         </label>
         <label className="wide">
           Detalhes
-          <textarea name="details" placeholder="Medidas, cidade, prazo desejado e observacoes." />
+          <textarea name="details" placeholder="Medidas, cidade, prazo desejado e observações." />
         </label>
         <Link className="primary-button wide" href={buildWhatsappUrl(defaultQuoteMessage)} target="_blank">
           <MessageCircle size={18} />

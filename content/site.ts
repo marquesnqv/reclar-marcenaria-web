@@ -2,32 +2,32 @@ export const siteConfig = {
   name: "Reclar Marcenaria LTDA",
   shortName: "Reclar",
   description:
-    "Marcenaria sob medida em Sao Bernardo do Campo para moveis planejados, ambientes residenciais e projetos comerciais.",
-  address: "Alameda Minas Gerais 929, Parque Sao Bernardo, Sao Bernardo do Campo, Sao Paulo",
-  hours: "Aberto das 8h as 17h",
+    "Marcenaria sob medida em São Bernardo do Campo para móveis planejados, ambientes residenciais e projetos comerciais.",
+  address: "Alameda Minas Gerais, 929, Parque São Bernardo, São Bernardo do Campo, São Paulo",
+  hours: "Aberto das 8h às 17h",
   phone: "11 95894-3182",
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5511958943182",
-  email: "orcamentos@reclarmarcenaria.com.br",
+  email: "orcamentos@reclarmarcenaria.com",
   nav: [
-    { label: "Inicio", href: "/" },
+    { label: "Início", href: "/" },
     { label: "Projetos", href: "/projetos" },
-    { label: "Orcamento", href: "/orcamento" },
+    { label: "Orçamento", href: "/orcamento" },
     { label: "Contato", href: "/contato" },
   ],
 };
 
 export const services = [
   {
-    title: "Moveis planejados",
-    text: "Projetos sob medida para cozinhas, quartos, salas, escritorios e areas de servico.",
+    title: "Móveis planejados",
+    text: "Projetos sob medida para cozinhas, quartos, salas, escritórios e áreas de serviço.",
   },
   {
     title: "Ambientes comerciais",
-    text: "Balcões, paineis, armarios, recepcoes e estruturas pensadas para uso diario.",
+    text: "Balcões, painéis, armários, recepções e estruturas pensadas para uso diário.",
   },
   {
     title: "Reformas e ajustes",
-    text: "Ajustes, renovacao de pecas e melhorias em moveis existentes quando o projeto permite.",
+    text: "Ajustes, renovação de peças e melhorias em móveis existentes quando o projeto permite.",
   },
 ];
 
@@ -35,30 +35,30 @@ export const projectCards = [
   {
     title: "Cozinhas planejadas",
     category: "Residencial",
-    text: "Armarios, bancadas e aproveitamento inteligente de espacos.",
+    text: "Armários, bancadas e aproveitamento inteligente de espaços.",
   },
   {
     title: "Quartos e closets",
     category: "Sob medida",
-    text: "Guarda-roupas, paineis, cabeceiras e organizacao personalizada.",
+    text: "Guarda-roupas, painéis, cabeceiras e organização personalizada.",
   },
   {
-    title: "Escritorios",
+    title: "Escritórios",
     category: "Funcional",
-    text: "Mesas, estantes e superficies pensadas para trabalho e estudo.",
+    text: "Mesas, estantes e superfícies pensadas para trabalho e estudo.",
   },
   {
     title: "Comercial",
     category: "Empresa",
-    text: "Marcenaria para atendimento, exposicao, estoque e operacao.",
+    text: "Marcenaria para atendimento, exposição, estoque e operação.",
   },
 ];
 
 export const processSteps = [
-  "Voce envia medidas, fotos ou uma descricao do ambiente.",
-  "A equipe entende o uso do espaco e prepara uma proposta inicial.",
-  "O projeto e alinhado com materiais, acabamento, prazo e instalacao.",
-  "A producao segue com acompanhamento ate a entrega final.",
+  "Você envia medidas, fotos ou uma descrição do ambiente.",
+  "A equipe entende o uso do espaço e prepara uma proposta inicial.",
+  "O projeto é alinhado com materiais, acabamento, prazo e instalação.",
+  "A produção segue com acompanhamento até a entrega final.",
 ];
 
 export function buildWhatsappUrl(message: string) {
@@ -67,4 +67,4 @@ export function buildWhatsappUrl(message: string) {
 }
 
 export const defaultQuoteMessage =
-  "Ola, gostaria de solicitar um orçamento com a Reclar Marcenaria.";
+  "Olá, gostaria de solicitar um orçamento com a Reclar Marcenaria.";

@@ -4,7 +4,7 @@ import { siteConfig } from "@/content/site";
 export default function SiteHeader() {
   return (
     <header className="site-header">
-      <Link href="/" className="brand" aria-label="Reclar Marcenaria inicio">
+      <Link href="/" className="brand" aria-label="Reclar Marcenaria início">
         <span className="brand-mark">R</span>
         <span>
           <strong>{siteConfig.shortName}</strong>
@@ -12,7 +12,7 @@ export default function SiteHeader() {
         </span>
       </Link>
 
-      <nav className="desktop-nav" aria-label="Navegacao principal">
+      <nav className="desktop-nav" aria-label="Navegação principal">
         {siteConfig.nav.map((item) => (
           <Link key={item.href} href={item.href}>
             {item.label}

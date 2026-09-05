@@ -9,15 +9,15 @@ export default function Home() {
       <section className="hero">
         <div className="hero-copy">
           <p className="section-kicker">Marcenaria sob medida</p>
-          <h1>Moveis pensados para o seu espaco.</h1>
+          <h1>Móveis pensados para o seu espaço.</h1>
           <p>
             A Reclar Marcenaria desenvolve projetos em madeira para casas e empresas,
-            com foco em acabamento, durabilidade e uso diario.
+            com foco em acabamento, durabilidade e uso diário.
           </p>
           <div className="hero-actions">
             <Link className="primary-button" href={buildWhatsappUrl(defaultQuoteMessage)} target="_blank">
               <MessageCircle size={18} />
-              Solicitar orcamento
+              Solicitar orçamento
             </Link>
             <Link className="secondary-button" href="/projetos">
               Ver projetos
@@ -27,17 +27,17 @@ export default function Home() {
         </div>
         <div className="hero-visual" aria-label="Textura visual de marcenaria">
           <div className="visual-label">
-            Projetos sob medida em Sao Bernardo do Campo, das 8h as 17h.
+            Projetos sob medida em São Bernardo do Campo, das 8h às 17h.
           </div>
         </div>
       </section>
 
       <section className="content-band split-band">
         <div>
-          <p className="section-kicker">Servicos</p>
+          <p className="section-kicker">Serviços</p>
           <p className="section-intro">
-            Do primeiro contato ate a instalacao, a proposta e transformar uma
-            necessidade real em um movel bem resolvido.
+            Do primeiro contato até a instalação, a proposta é transformar uma
+            necessidade real em um móvel bem resolvido.
           </p>
         </div>
         <div className="card-grid">
@@ -55,7 +55,7 @@ export default function Home() {
           <p className="section-kicker">Como funciona</p>
           <p className="section-intro">
             Um processo direto para entender medidas, acabamento e prioridade antes
-            de iniciar a producao.
+            de iniciar a produção.
           </p>
         </div>
         <ol className="process-list">
@@ -70,7 +70,7 @@ export default function Home() {
           <div>
             <p className="section-kicker">Projetos</p>
             <p className="section-intro">
-              Espacos para publicar fotos reais, antes e depois, materiais e
+              Espaços para publicar fotos reais, antes e depois, materiais e
               trabalhos recentes.
             </p>
           </div>

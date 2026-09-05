@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`.
+Open `http://127.0.0.1:3001`.
 
 ## Deploy On Vercel
 
@@ -32,6 +32,6 @@ Supabase is prepared for future quote/project storage. Stripe is prepared for fu
 ## Current Business Info
 
 - Company: Reclar Marcenaria LTDA
-- Address: Alameda Minas Gerais 929, Parque Sao Bernardo, Sao Bernardo do Campo, Sao Paulo
-- Hours: Aberto das 8h as 17h
+- Address: Alameda Minas Gerais, 929, Parque São Bernardo, São Bernardo do Campo, São Paulo
+- Hours: Aberto das 8h às 17h
 - Phone/WhatsApp: 11 95894-3182

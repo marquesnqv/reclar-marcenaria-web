@@ -7,9 +7,9 @@ This project is ready for Vercel now. Supabase, Stripe, and email are prepared a
 Add these environment variables in Vercel:
 
 ```txt
-NEXT_PUBLIC_SITE_URL=https://reclarmarcenaria.com.br
+NEXT_PUBLIC_SITE_URL=https://reclarmarcenaria.com
 NEXT_PUBLIC_WHATSAPP_NUMBER=5511958943182
-QUOTE_TO_EMAIL=orcamentos@reclarmarcenaria.com.br
+QUOTE_TO_EMAIL=orcamentos@reclarmarcenaria.com
 ```
 
 Optional later:
@@ -22,7 +22,7 @@ STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
 STRIPE_PRICE_DEPOSIT=
 RESEND_API_KEY=
-EMAIL_FROM_DEFAULT="Reclar Marcenaria <contato@reclarmarcenaria.com.br>"
+EMAIL_FROM_DEFAULT="Reclar Marcenaria <contato@reclarmarcenaria.com>"
 ```
 
 ## Supabase
@@ -38,7 +38,7 @@ Use Stripe only when the business wants online deposits or paid consultations.
 Suggested future endpoint:
 
 ```txt
-https://reclarmarcenaria.com.br/api/stripe/webhook
+https://reclarmarcenaria.com/api/stripe/webhook
 ```
 
 Suggested events for a simple deposit flow:

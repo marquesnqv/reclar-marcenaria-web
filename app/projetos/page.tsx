@@ -11,8 +11,8 @@ export default function ProjetosPage() {
         <p className="section-kicker">Projetos</p>
         <h1>Galeria para trabalhos recentes.</h1>
         <p>
-          Esta pagina foi preparada para receber fotos reais da Reclar: cozinhas,
-          closets, paineis, escritorios e ambientes comerciais.
+          Esta página foi preparada para receber fotos reais da Reclar: cozinhas,
+          closets, painéis, escritórios e ambientes comerciais.
         </p>
       </section>
 
