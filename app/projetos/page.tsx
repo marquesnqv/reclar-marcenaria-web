@@ -18,10 +18,6 @@ export default function ProjetosPage() {
               preciso para cozinhas, closets, dormitórios e áreas integradas.
             </p>
           </div>
-          <div className="project-summary" aria-label="Resumo dos projetos">
-            <strong>{portfolioProjects.length.toString().padStart(2, "0")}</strong>
-            <span>projetos<br />realizados</span>
-          </div>
         </div>
       </section>
 

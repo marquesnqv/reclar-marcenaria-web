@@ -386,44 +386,24 @@ button {
 
 .page-hero-heading {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: space-between;
   gap: 32px;
   max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .page-hero-heading > div:first-child {
   max-width: 760px;
+  margin: 0 auto;
 }
 
 .page-hero-heading p {
   max-width: 650px;
-  margin: 22px 0 0;
+  margin: 22px auto 0;
   color: var(--muted);
   line-height: 1.6;
-}
-
-.project-summary {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  flex: 0 0 auto;
-  border-left: 1px solid var(--line);
-  padding-left: 24px;
-  color: var(--muted);
-  line-height: 1.2;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.72rem;
-  font-weight: 800;
-}
-
-.project-summary strong {
-  color: var(--wood);
-  font-family: var(--font-display), serif;
-  font-size: 3.5rem;
-  line-height: 0.8;
-  letter-spacing: normal;
 }
 
 .project-grid {
@@ -720,13 +700,6 @@ button {
 
   .page-hero-heading {
     display: block;
-  }
-
-  .project-summary {
-    width: fit-content;
-    margin-top: 26px;
-    padding-left: 0;
-    border-left: 0;
   }
 
   .hero h1,
