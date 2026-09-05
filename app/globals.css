@@ -7,7 +7,7 @@
   --wood: #8b4f28;
   --wood-dark: #422516;
   --green: #2f5b45;
-  --charcoal: #141312;
+  --charcoal: #3b2920;
   --font-sans: "Segoe UI", Arial, sans-serif;
   --font-display: "Segoe UI", Arial, sans-serif;
 }
@@ -158,17 +158,17 @@ button {
   justify-content: end;
   gap: 22px;
   padding: clamp(36px, 6vw, 72px) clamp(20px, 5vw, 56px);
-  border-right: 1px solid rgba(255, 250, 240, 0.14);
-  background: var(--charcoal);
-  color: var(--paper-strong);
+  border-right: 1px solid rgba(66, 37, 22, 0.12);
+  background: linear-gradient(145deg, #e8d8c5, #d8bea4);
+  color: var(--ink);
 }
 
 .hero-copy .section-kicker {
-  color: #d09a69;
+  color: var(--wood-dark);
 }
 
 .hero-copy p:not(.section-kicker) {
-  color: rgba(255, 250, 240, 0.72);
+  color: #5f5147;
 }
 
 .section-kicker,
@@ -211,8 +211,8 @@ button {
 }
 
 .hero-copy .secondary-button {
-  border-color: rgba(255, 250, 240, 0.42);
-  color: var(--paper-strong);
+  border-color: rgba(66, 37, 22, 0.38);
+  color: var(--wood-dark);
 }
 
 .hero-visual {
@@ -283,27 +283,27 @@ button {
 }
 
 .hero + .content-band {
-  background: var(--wood-dark);
-  color: var(--paper-strong);
+  background: #c8a98b;
+  color: var(--ink);
 }
 
 .hero + .content-band .section-kicker {
-  color: #d09a69;
+  color: var(--wood-dark);
 }
 
 .hero + .content-band .section-intro,
 .hero + .content-band .process-list li {
-  color: rgba(255, 250, 240, 0.72);
+  color: #5f5147;
 }
 
 .hero + .content-band .service-card {
-  border-color: rgba(255, 250, 240, 0.18);
-  background: rgba(255, 250, 240, 0.08);
-  box-shadow: none;
+  border-color: rgba(66, 37, 22, 0.16);
+  background: rgba(255, 250, 240, 0.58);
+  box-shadow: 8px 8px 0 rgba(66, 37, 22, 0.08);
 }
 
 .hero + .content-band .service-card h3 {
-  color: var(--paper-strong);
+  color: var(--ink);
 }
 
 .content-band:nth-of-type(even) {
@@ -449,16 +449,16 @@ button {
 .page-hero {
   padding: clamp(40px, 6vw, 72px) clamp(20px, 5vw, 56px) clamp(30px, 4vw, 48px);
   border-bottom: 1px solid var(--line);
-  background: var(--charcoal);
-  color: var(--paper-strong);
+  background: linear-gradient(145deg, #e8d8c5, #d8bea4);
+  color: var(--ink);
 }
 
 .page-hero .section-kicker {
-  color: #d09a69;
+  color: var(--wood-dark);
 }
 
 .page-hero-heading p {
-  color: rgba(255, 250, 240, 0.72);
+  color: #5f5147;
 }
 
 .page-hero-heading {
