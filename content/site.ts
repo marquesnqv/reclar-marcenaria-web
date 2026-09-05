@@ -37,16 +37,22 @@ export const projectCards = [
     title: "Cozinhas planejadas",
     category: "Residencial",
     text: "Armários, bancadas e aproveitamento inteligente de espaços.",
+    image: "/images/cozinha-planejada.png",
+    imageAlt: "Cozinha planejada com armários de madeira sob medida.",
   },
   {
     title: "Quartos e closets",
     category: "Sob medida",
     text: "Guarda-roupas, painéis, cabeceiras e organização personalizada.",
+    image: "/images/quarto-closet-planejado.png",
+    imageAlt: "Quarto com guarda-roupa e closet planejados em madeira.",
   },
   {
     title: "Escritórios",
     category: "Funcional",
     text: "Mesas, estantes e superfícies pensadas para trabalho e estudo.",
+    image: "/images/home-office-planejado.png",
+    imageAlt: "Home office com mesa, armários e prateleiras planejadas.",
   },
   {
     title: "Comercial",

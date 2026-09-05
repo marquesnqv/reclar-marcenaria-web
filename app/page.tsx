@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, MapPin, MessageCircle } from "lucide-react";
 import QuotePanel from "@/components/quote-panel";
@@ -76,9 +77,21 @@ export default function Home() {
           </div>
           <div className="card-grid">
             {projectCards.slice(0, 3).map((project) => (
-              <article className="service-card" key={project.title}>
-                <h3>{project.title}</h3>
-                <p>{project.text}</p>
+              <article className="service-card image-service-card" key={project.title}>
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.imageAlt}
+                    width={720}
+                    height={480}
+                    sizes="(max-width: 900px) 100vw, 33vw"
+                    className="service-card-image"
+                  />
+                ) : null}
+                <div>
+                  <h3>{project.title}</h3>
+                  <p>{project.text}</p>
+                </div>
               </article>
             ))}
           </div>

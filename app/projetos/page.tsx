@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { projectCards } from "@/content/site";
 
 export const metadata = {
@@ -19,9 +20,20 @@ export default function ProjetosPage() {
       <section className="page-main project-grid">
         {projectCards.map((project) => (
           <article className="project-card" key={project.title}>
-            <span className="meta">{project.category}</span>
-            <h3>{project.title}</h3>
-            <p>{project.text}</p>
+            {project.image ? (
+              <Image
+                src={project.image}
+                alt={project.imageAlt}
+                fill
+                sizes="(max-width: 900px) 50vw, 50vw"
+                className="project-card-image"
+              />
+            ) : null}
+            <div className="project-card-copy">
+              <span className="meta">{project.category}</span>
+              <h3>{project.title}</h3>
+              <p>{project.text}</p>
+            </div>
           </article>
         ))}
       </section>
