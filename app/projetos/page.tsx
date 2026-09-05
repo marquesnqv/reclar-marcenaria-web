@@ -10,11 +10,19 @@ export default function ProjetosPage() {
     <main>
       <section className="page-hero">
         <p className="section-kicker">Projetos</p>
-        <h1>Galeria para trabalhos recentes.</h1>
-        <p>
-          Esta página foi preparada para receber fotos reais da Reclar: cozinhas,
-          closets, painéis, escritórios e ambientes comerciais.
-        </p>
+        <div className="page-hero-heading">
+          <div>
+            <h1>Ambientes planejados para viver bem.</h1>
+            <p>
+              Conheça alguns dos projetos da Reclar: móveis sob medida com acabamento
+              preciso para cozinhas, closets, dormitórios e áreas integradas.
+            </p>
+          </div>
+          <div className="project-summary" aria-label="Resumo dos projetos">
+            <strong>{portfolioProjects.length.toString().padStart(2, "0")}</strong>
+            <span>projetos<br />realizados</span>
+          </div>
+        </div>
       </section>
 
       <ProjectGallery projects={portfolioProjects} />
